@@ -48,7 +48,8 @@ def main():
                 return
             for s in shots:
                 if a.detect_collision(s):
-                    a.kill()
+                    s.kill()
+                    a.hit()
 
         for d in drawable:
             d.draw(screen)
